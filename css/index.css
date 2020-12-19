@@ -1,0 +1,175 @@
+/* Import de https da fonte do Google */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Fonte padrão */
+* {
+    font-family: Roboto;
+}
+
+/* body */
+body {
+padding: 0;
+margin: 0;
+}
+
+/* Imagem background principal */
+.homepagebg {
+    /* box-shadow: 1px 1px 3000px 250px rgba(0, 0, 0, 0.10) inset; */
+    /* -webkit-box-shadow: 50px 10px 999999999px 100px rgba(255, 255, 255, 0.377) inset;     */
+    background-image: url(../css/backgrounds/backgroundNovo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    height: auto;
+    padding-bottom: 450px;
+    text-align: center;
+}
+
+/* Imagem matheus castro scroll */
+#imagem-corpo {
+    box-shadow: 0 0 300em rgb(0, 0, 0) inset;
+    background-image: url(../css/backgrounds/scroll.jpg);
+    background-attachment: cover;
+    background-position: fixed;
+    user-select: none;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    height: auto;
+}
+
+/* Imagem antiga corpo do texto de apresentação */
+/*#imagem-corpo .imagem-corpo-titulo {*/
+/*    text-align: center;*/
+/*    margin-left: 55px;*/
+/*    padding-top: 100px;*/
+/*    padding-bottom: 150px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-image: url(../css/backgrounds/background4.png);*/
+/*}*/
+
+
+/* posicão botões navbar */
+.botoes-nav {
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+/* Botão navbar */
+.botoes-nav a {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #1d3557;
+    font-size: 18.5px;
+    border-radius: 7.5px;
+    margin: 10px;
+    height: 45px;
+    width: 200px;
+}
+
+/* Botão "crie sua conta" */
+#imagem-corpo button {
+    width: 100%;
+    background-color: #1d3557;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 24px;
+    border-radius: 7.5px;
+    margin: 10px;
+    height: 50px;
+    width: 350px;
+    letter-spacing: 2px;
+}
+
+/* Estilo ao mouse sobre o botão */
+#imagem-corpo button:hover,
+.botoes-nav a:hover {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+/* Texto "Jogue RPG de mesa com seus amigos!" */
+.homepagebg p,
+.homepagebg strong {
+    width: 100%;
+    padding-top: 40px;
+    letter-spacing: 3.5px;
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.952);
+    text-shadow: 0.2em 0.2em 0.2em black,
+                0.5em 0.5em 0.5em black,
+                0.1em 0.1em 0.1em  black;
+}
+
+/* Título de apresentação */
+#imagem-corpo h2 {
+    width: 100%;
+    padding-top: 100px;
+    font-weight: bolder;
+    color: #000;
+    padding-bottom: 5px;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+/* Texto de apresentação */
+#imagem-corpo p {
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: #000;
+    font-size: 24px;
+    text-justify: initial;
+    padding: 40px 90px;
+}
+
+/*------ Modal style ------*/
+
+/* form e conteudo */
+#meuModal .modal-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.781);
+    background-image: linear-gradient(30deg ,transparent 10px, rgb(17, 70, 138), rgb(88, 230, 255) 100%);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+/* inputs modal */
+#meuModal .modal-body input {
+    border-radius: 5px;
+    height: 35px;
+    opacity: 92%;
+    color: #000;
+}
+
+/* favicon's */
+.modal i {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* botão entrar login */
+#meuModal .modal-footer button{
+    background-color: #000, transparent 1px;
+    background-image: linear-gradient(8deg, rgb(2, 52, 110), rgb(14, 110, 167) 70%);
+    padding-bottom: 0;
+    border-radius: 30px;
+    color: white;
+    text-shadow: 0.01em 0.01em 0.01em #fff;
+    box-shadow: 0.01em 0.001em 0.5em 0.001em #000;
+    font-size: 22px;
+    letter-spacing: 1px;
+    height: 45px;
+    width: 200px;
+}
+
+#meuModal .modal-footer button:hover{
+    opacity: 80%;
+    border-radius: 20px;
+}
